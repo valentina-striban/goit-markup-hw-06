@@ -73,7 +73,7 @@ overflow: hidden;
 .container {
     /* width: 1158px; */
     width: 320px;
-    padding-left: 16px;
+    /* padding-left: 16px; */
     padding-right: 16px;
     margin: 0 auto;
 }
@@ -87,10 +87,10 @@ overflow: hidden;
 }
 
 .header-navigation {
-    display: flex;
-    flex-grow: 1;
-    justify-content: space-between;
-    margin-right: 332px;
+    /* display: flex; */
+    /* flex-grow: 1; */
+    /* justify-content: space-between; */
+    /* margin-right: 332px; */
     align-items: center;
 }
 
@@ -113,9 +113,9 @@ line-height: 1.17;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: #4d5ae5;
-margin-right: 76px;
-display: flex;
-align-items: center;
+/* margin-right: 76px; */
+/* display: flex; */
+/* align-items: center; */
 }
 
 .logo-part {
@@ -192,7 +192,8 @@ color: #404bbf;
     position: absolute;
     right: 16px;
     border: none;
-    background-color: #ffffff; 
+    padding: 0;
+    background-color: transparent; 
 }
 
 .header-solid-icon {
@@ -1143,27 +1144,31 @@ fill: #ffffff;
         padding-right: 16px;
     }
 
+    .header-navigation {
+        display: flex;
+        align-items: center;
+        }
+    }
+
+    .header-logo {
+        margin-right: 120px;
+    }
+
     .header-solid-button {
         display: none;
-    }
-    
-    .address-menu-list {
-        display: flex;
-        font-style: normal;
-        gap: 12px;
-        flex-direction: column;
-        margin-left: auto;
-        position: absolute;
-        right: 16px;
-        top: 24px;
-        align-items: center;
-        justify-content: center;
-
     }
 
     .header-menu-list {
         display: flex;
     }
+
+    .address-menu-list {
+        display: flex;
+        gap: 12px;
+        flex-direction: column;
+    }
+
+    
 
     .address-link {
         font-size: 12px;
@@ -1254,21 +1259,7 @@ fill: #ffffff;
         height: 300px;
     }
 
-    .footer {
-        /* padding-left: 108px;
-        padding-top: 96px;
-        padding-bottom: 96px; */
-        /* flex-direction: row;
-        flex-wrap: wrap;
-        max-width: 1158px;
-        gap: 72px 24px; */
-    }
-
     .footer-container {
-        /* display: flex;
-        align-items: baseline;
-        justify-content: start;
-        flex-direction: column; */
         max-width: calc(264px * 2 + 24px);
         flex-direction: row;
         gap: 72px 24px;
@@ -1337,12 +1328,17 @@ fill: #ffffff;
     }
 
     .address-menu-list {
-        display: flex;
         gap: 40px;
-        align-items: center;
         flex-direction: row;
     }
     
+    .address-link {
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+
+    }
+
     .header-menu-list {
         display: flex;
     }
